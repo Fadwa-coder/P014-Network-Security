@@ -34,6 +34,7 @@ L'architecture comprendra :
 - un pare-feu assurant le contrôle des communications ;
 - une zone DMZ ;
 - un Bastion Host comme point d'entrée unique ;
+- un pare-feu assurant le contrôle des communications ;
 - un réseau privé isolé ;
 - des serveurs privés ;
 - une machine Kali Linux pour les tests de sécurité.

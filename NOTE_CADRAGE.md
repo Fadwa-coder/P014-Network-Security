@@ -31,16 +31,21 @@ ressources du réseau privé.
 L'architecture comprendra :
 
 - une zone publique ;
-- un pare-feu ;
+- un pare-feu assurant le contrôle des communications ;
 - une zone DMZ ;
-- un Bastion Host ;
-- un réseau privé ;
+- un Bastion Host comme point d'entrée unique ;
+- un réseau privé isolé ;
 - des serveurs privés ;
 - une machine Kali Linux pour les tests de sécurité.
 
-Le Bastion constituera le point d'entrée contrôlé vers
-les ressources du réseau privé.
+Le pare-feu contrôlera les communications entre les différentes
+zones du réseau.
 
+Le Bastion constituera le point d'entrée contrôlé vers les
+ressources du réseau privé.
+
+Les serveurs privés ne seront pas directement accessibles depuis
+la zone publique.
 ## 5. Technologies utilisées
 
 - VMware
